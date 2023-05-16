@@ -22,8 +22,8 @@ select *from employees;
 
 -- Create a Customer table
 create table departments(
-         dept_no varchar,
-         dept_name varchar,
+         dept_no varchar not null,
+         dept_name varchar not null,
 	     primary key(dept_no)
 );
 
@@ -31,8 +31,8 @@ select *from departments;
 
 -- Create a Customer table
 create table dept_emp(
-         emp_no int,
-         dept_no varchar,
+         emp_no int not null,
+         dept_no varchar not null,
 	     foreign key(emp_no) references employees(emp_no),
 	     foreign key(dept_no) references departments(dept_no),
 	     PRIMARY KEY (emp_no, dept_no)
@@ -42,8 +42,8 @@ select *from dept_emp;
 
 -- Create a Customer table
 create table dept_manager(
-         dept_no varchar,
-         emp_no int,
+         dept_no varchar not null,
+         emp_no int not null;,
 	     PRIMARY KEY (emp_no, dept_no),
 	     foreign key(dept_no) references departments(dept_no),
 	     foreign key(emp_no) references employees(emp_no)
@@ -64,8 +64,8 @@ select *from salaries;
 
 -- Create a Customer table
 create table titles(
-         title_id varchar,
-         title varchar,
+         title_id varchar not null,
+         title varchar not null,
 	     primary key (title_id)     
 );
 
@@ -147,11 +147,4 @@ from employees
 where last_name is not null
 group by last_name
 order by last_name desc;
-
-
-
-
-
-
-
 
