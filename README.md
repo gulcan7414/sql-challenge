@@ -1,18 +1,18 @@
-# SQL-Challenge 
+# SQL Challenge 
 ### Data Modelling, Data Engineering, Data Analysis in PgAdmin4
 
-# Data Modelling
+### Data Modelling
 First of all I inspected the CSV files, and then sketched an ERD of the tables. I used this tool http://www.quickdatabasediagrams.com/
 
 ![export](https://github.com/gulcan7414/sql-challenge/assets/123443605/c3a49532-3680-4071-b955-06b6fa53b797)
 
-# Data Engineering
+### Data Engineering
   Create a table schema for each of the six CSV files. Specify the data types, primary keys, foreign keys, and other constraints.
   Convert the birth date and hire date from MM/DD/YY to YY/MM/DD format. Used Pandas for convert.
   
   <img width="943" alt="Screen Shot 2023-05-16 at 10 52 03 am" src="https://github.com/gulcan7414/sql-challenge/assets/123443605/bf54423f-29aa-466b-a02f-24e10b6f4f73">
 
-#  Data Analysis
+###  Data Analysis
 
 Answers all these questions 
 1. List the employee number, last name, first name, sex, and salary of each employee.
